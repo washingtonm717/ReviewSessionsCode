@@ -64,6 +64,9 @@ public class ReqresApi {
             "last_name": "Ramos",
 		 */
 		
+		assertEquals("Ramos", json.getString("data.find{it.id==6}.last_name"));
+		assertEquals("Tracey", json.getString("data.find{it.id==6}.first_name"));
+		
 		
 	}
 
